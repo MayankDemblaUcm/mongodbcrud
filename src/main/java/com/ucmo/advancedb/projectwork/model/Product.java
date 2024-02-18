@@ -13,7 +13,7 @@ public class Product {
     @Id
     private String _id;
 
-    public Product(String code, String name, String main_category, String sub_category, String image, double ratings, String no_of_ratings, String actual_price, String discount_price) {
+    public Product(Long code, String name, String main_category, String sub_category, String image, double ratings, String no_of_ratings, String actual_price, String discount_price) {
         this.code = code;
         this.name = name;
         this.main_category = main_category;
@@ -25,7 +25,7 @@ public class Product {
         this.discount_price = discount_price;
     }
 
-    private String code;
+    private Long code;
     private String name;
     private String main_category;
     private String sub_category;
